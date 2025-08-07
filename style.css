@@ -1,0 +1,222 @@
+/* Reset & Base */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* or your background */
+  color: #333;
+}
+
+/* Make main content take remaining space */
+main {
+  flex: 1;
+  padding: 30px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #2a9d8f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+
+.header-hero {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.header-hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Optional texture */
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.header-hero h1,
+.header-hero p {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  .header-hero h1 {
+    font-size: 2rem;
+  }
+
+  .header-hero p {
+    font-size: 1rem;
+  }
+}
+.header-hero .container {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #264653, #2a9d8f);
+}
+
+header {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+/* Tabs / Cards */
+.tab-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.tab-card {
+  background-color: white;
+  border: 2px solid #2a9d8f;
+  border-radius: 12px;
+  width: 260px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.tab-card:hover {
+  background-color: #e9c46a;
+  color: #264653;
+  transform: scale(1.03);
+}
+
+.tab-card h2 {
+  color: #2a9d8f;
+  margin-bottom: 10px;
+}
+
+/* Page Main Content */
+main {
+  padding: 30px;
+}
+
+/* Lists */
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Footer stays at bottom */
+.footer {
+  background: linear-gradient(135deg, #1d3557, #457b9d); /* Match header */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.footer .container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+/* new code of header */
+.card-header {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.btn {
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+/* new code of header */
+
+
+
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tab-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.nav-link.bg-light {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link.bg-light:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+
+
+
+

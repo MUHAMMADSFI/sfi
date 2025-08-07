@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google" content="notranslate" />
+
+  <title>Cleaning Awareness</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- Fixed Home Button -->
+  <a href="../../index.html" class="btn btn-primary position-fixed top-0 start-0 m-3 z-3 shadow">
+    🏠 Home
+  </a>
+
+  <!-- Header Include -->
+  <div id="header-include"></div>
+  <script>
+    fetch("../../includes/header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-include").innerHTML = data);
+  </script>
+
+  <!-- Header Section -->
+  <header class="header-hero position-relative text-white">
+    <div class="overlay"></div>
+    <div class="container py-4 position-relative">
+      <div class="w-100 d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-5 fw-bold">Cleaning Awareness</h1>
+        <p class="lead mb-4">Maintain hygiene and follow procedures to ensure a safe work environment.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <section class="mb-5">
+      <h2 class="mb-4">🧼 General Cleaning Guidelines</h2>
+      <ul class="list-group list-group-flush">
+         <li class="list-group-item">🧽 Clean the floor on a daily basis.</li>
+        <li class="list-group-item">❄️ Clean the air conditioner when found dirty.</li>
+        <li class="list-group-item">🪰 Check the EFK (Electronic Fly Killer); if not clean, report to the store in-charge.</li>
+        <li class="list-group-item">📦 Wrap film rolls properly; if found open, secure them immediately.</li>
+        <li class="list-group-item">🗑️ If raw material spills, dispose of it in the <strong>Food Waste</strong> bin.</li>
+        <li class="list-group-item">🚮 Dispose of non-food waste in the <strong>Non-Food Waste</strong> bin.</li>
+        <li class="list-group-item">🧴 Sanitize high-touch surfaces regularly (door handles, switches, etc.).</li>
+        <li class="list-group-item">🧤 Always wear gloves while cleaning sensitive areas.</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="mb-4">🔴🔵 Allergen vs Non-Allergen Cleaning Tools</h2>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <div class="card border-danger shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Allergen Products</h5>
+              <p class="card-text">
+                Use <strong>Red Mop</strong> 🧹 and <strong>Red Broom</strong> 🧼 for cleaning.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card border-primary shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Non-Allergen Products</h5>
+              <p class="card-text">
+                Use <strong>Blue Mop</strong> 🧹 and <strong>Blue Broom</strong> 🧼 for cleaning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="mb-4">🗑️ Waste Disposal</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Dispose spilled raw materials in the <strong>food waste bin</strong>.</li>
+        <li class="list-group-item">Dispose packaging, gloves, and other waste in the <strong>non-food waste bin</strong>.</li>
+        <li class="list-group-item">Always cover bins and keep the waste area clean.</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="mb-4">✨ Additional Hygiene Tips</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Use designated cleaning equipment for different zones.</li>
+        <li class="list-group-item">Replace old or damaged tools promptly.</li>
+        <li class="list-group-item">Train staff regularly on updated cleaning protocols.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3 text-white text-center">
+    <div class="container">
+      <small>&copy; 2025 Awareness Portal. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="../../js/translate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

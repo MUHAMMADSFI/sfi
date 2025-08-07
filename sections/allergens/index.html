@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google" content="notranslate" />
+
+  <title>Allergens Awareness</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../style.css" />
+
+  
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+<a href="../../index.html" class="btn btn-primary position-fixed top-0 start-0 m-3 z-3 shadow">
+  🏠 Home
+</a>
+  <!-- index.html translate or any other page -->
+  <div id="header-include"></div>
+
+  <script>
+    fetch("../../includes/header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-include").innerHTML = data);
+  </script>
+<!-- end of translater element -->
+ 
+
+  <!-- Header -->
+  <header class="header-hero position-relative text-white">
+    <div class="overlay"></div>
+
+    <!-- HEADER CONTENT CENTERED -->
+    <div class="container py-4 position-relative">
+      <div class="w-100 d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-5 fw-bold">Allergens Awareness</h1>
+        <p class="lead mb-4">Understand and identify allergens in our workplace to ensure food safety.</p>
+        <a href="details.html" class="btn btn-outline-light rounded-pill px-4 py-2 shadow-sm">
+          🧪 Allergens
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <section class="mb-5">
+      <h2 class="mb-4">🚨 Common Allergens We Monitor</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card border-danger shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Peanuts</h5>
+              <p class="card-text">Highly allergenic. Must be separated from other ingredients and clearly labeled.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-warning shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Dairy</h5>
+              <p class="card-text">Milk and milk-based products must be stored and handled with care to avoid
+                cross-contact.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-success shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title text-success">Gluten (Wheat)</h5>
+              <p class="card-text">Label all gluten-containing items and avoid using shared equipment with gluten-free
+                products.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <h2 class="mb-4">✅ Allergen Handling Tips</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Wash hands and change gloves between handling different food items.</li>
+        <li class="list-group-item">Use separate utensils and cutting boards for allergenic and non-allergenic foods.
+        </li>
+        <li class="list-group-item">Label all ingredients clearly and double-check recipes before production.</li>
+        <li class="list-group-item">Store allergens on separate shelves to avoid contamination.</li>
+        <li class="list-group-item">Train staff regularly on allergen awareness and safety procedures.</li>
+      </ul>
+    </section>
+
+    <section class="mt-5 text-center">
+      <a href="../../assets/ALLERGEN.pdf" class="btn btn-outline-primary rounded-pill" target="_blank">
+        📄 Download Allergen Guide (PDF)
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3 text-white text-center">
+    <div class="container">
+      <small>&copy; 2025 Awareness Portal. All rights reserved.</small>
+    </div>
+  </footer>
+  <script src="../../js/translate.js"></script>
+ 
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
